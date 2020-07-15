@@ -79,3 +79,33 @@ nav li{
   color:#fff;
   width: 100%;
 }
+
+/* contact me section */
+.contact-me{
+  background-color: lightgey;
+}
+
+.contact-me h2{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-me div{
+  font-weight: bold;
+}
+.contact-me input{
+  margin-bottom: 10px;
+  border: none;
+  border-bottom:1px solid lightgrey;
+}
+
+.input-message{
+  display: inline;
+  height: 80px;
+}
+.contact-me .contact-btn{
+  margin:20px 0;
+  background-color:#4FBC9B;
+}
+
+/* footer */
