@@ -1,0 +1,36 @@
+nav li{
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.header-nav{
+  background: #2C3E4F;
+  width: 100%;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.header-nav h4{
+  display: inline-block;
+}
+
+.color-white{
+  color:#fff;
+}
+
+.hero{
+  background-color: #4FBC9B;
+  height: 500px;
+}
+.propic{
+  height: 100px;
+  margin-top:150px;
+  background: red;
+  border-radius: 50px;
+}
+
+.propic-text{
+  text-align: center;
+  text-transform: uppercase;
+}
