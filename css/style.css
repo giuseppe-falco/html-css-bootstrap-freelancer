@@ -1,3 +1,9 @@
+/* generic */
+.color-white{
+  color:#fff;
+}
+
+/* header nav */
 nav li{
   display: inline-block;
   list-style: none;
@@ -15,10 +21,7 @@ nav li{
   display: inline-block;
 }
 
-.color-white{
-  color:#fff;
-}
-
+/* hero section */
 .hero{
   background-color: #4FBC9B;
   height: 500px;
@@ -34,3 +37,16 @@ nav li{
   text-align: center;
   text-transform: uppercase;
 }
+/* portfolio section */
+.portfolio{
+  text-align: center;
+}
+
+.test{
+  background: red;
+  height: 30px;
+  width: 100%;
+  margin:10px auto;
+}
+
+/* about section */
