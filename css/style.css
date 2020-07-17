@@ -56,11 +56,28 @@ header, main, footer{
 
 .header-nav h4{
   display: inline-block;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 800;
   line-height: 80px;
+  white-space: nowrap;
 }
 
+.header-menu {
+  vertical-align: bottom;
+  border: 2px solid #4FBC9B;
+  border-radius:10px;
+  background-color: #4FBC9B;
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+.header-menu:hover{
+  background-color: #148f77;
+  border-color:#148f77;
+}
+.fa-bars{
+  margin-left:5px;
+}
 /* hero section */
 .hero{
   background-color: #4FBC9B;
@@ -98,6 +115,10 @@ header, main, footer{
   font-size: 3em;
   font-weight: 800;
 }
+                          /* non funziona, da controllare */
+                        #portfolio-title:hover #li-portfolio{
+                          color:red;
+                        }
 
 .portfolio-block{
   margin-bottom:60px;
@@ -106,7 +127,9 @@ header, main, footer{
 .portfolio-block > div{
   /* soluzione che non mi piace perchè apparentemente sembra perfetta ma se si da un background ai div esce fuori il putridume, da fixare!! */
   /* background: red; */
+  border:1px solid #fff;
   /* width: 100%; */
+  overflow: hidden;
 }
 
 .portfolio-block img{
@@ -169,13 +192,17 @@ header, main, footer{
   font-weight: 500;
 }
 
-.about .about-btn{
+#about-btn{
   background-color:#4FBC9B;
   border: 1px solid #fff;
   color:#fff;
-  width: 100%;
 }
 
+#about-btn:hover{
+  border-color: #148f77;
+  color:#000;
+  background-color: #fff
+}
 /* contact me section */
 .contact-me{
   background-color: lightgey;
@@ -183,26 +210,38 @@ header, main, footer{
 
 .contact-me h2{
   padding: 20px 0;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 .contact-me div{
   font-weight: bold;
 }
-.contact-me input{
+.contact-input{
   margin-bottom: 10px;
-  border: none;
+  font-size: 18px;
+  border: 0;
+  border:none;
   border-bottom:1px solid lightgrey;
+  width: 100%;
+  color:#000000;
 }
 
-.input-message{
-  display: inline;
-  height: 80px;
+.contact-me .form input .contact-input{
+  box-shadow: none;
 }
-.contact-me .contact-btn{
+
+#contact-btn{
+  color:#fff;
   margin:20px 0;
   background-color:#4FBC9B;
 }
 
+#contact-btn:hover{
+  color:#fff;
+  background-color: #159a80;
+  border-color: #148f77;
+}
 /* footer */
 .footer, .copyright{
   padding:30px 0;
@@ -223,6 +262,7 @@ header, main, footer{
 
 }
 .footer-around li{
+  cursor:pointer;
   display: inline-block;
   border: 1px solid #fff;
   padding: 13px;
@@ -235,8 +275,19 @@ header, main, footer{
   margin-left: -15px;
   padding:
 }
+
+.footer-around li:hover{
+  background-color: #fff;
+  color:#39536D;
+}
+
 .footer-about a{
   color:#4FBC9B;
+}
+
+.about-hover:hover{
+  text-decoration: underline;
+  color:#117964;
 }
 
 .copyright{

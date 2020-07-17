@@ -21,10 +21,10 @@
               <div class="col-xs-7 col-xs-offset-1 col-lg-4 col-sm-offset-0 col-md-offset-0 col-md-4 col-sm-5">
                 <h4>START BOOTSTRAP</h4>
               </div>
-              <div class="col-xs-1 col-xs-offset-2 hidden-sm hidden-md hidden-lg"><i class="fas fa-bars"></i></div>
-              <div class="hidden-xs col-lg-4 col-lg-offset-4 col-md-5 col-md-offset-3 col-sm-7 col-sm-offset-0 ">
+              <button type="button" name="button" class="header-menu btn-lg col-xs-2 col-xs-offset-0 col-sm-2 col-sm-offset-5 hidden-md hidden-lg">MENU<i class="fas fa-bars"></i></button>
+              <div class="hidden-xs hidden-sm  col-lg-4 col-lg-offset-4 col-md-5 col-md-offset-3 ">
                 <ul class="">
-                  <li>portfolio</li>
+                  <li id="li-portfolio">portfolio</li>
                   <li>about</li>
                   <li>contact</li>
                 </ul>
@@ -53,7 +53,7 @@
         <!-- portfolio section -->
         <section class="container portfolio center">
           <div class="row">
-            <h2>PORTFOLIO</h2>
+            <h2 id="portfolio-title">PORTFOLIO</h2>
             <div class="star-div">
               <div></div>
               <i class="fas fa-star"></i>
@@ -103,8 +103,8 @@
           <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-3 col-lg-offset-0 about-text">
             You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
           </div>
-          <div class="col-xs-4 col-xs-offset-4 ">
-            <button type="button" class="btn btn-lg about-btn center"><i class="fas fa-download"></i> Free Download!</button>
+          <div class="col-xs-12 col-xs-offset-0 center">
+            <button type="button" class="btn btn-lg center" id="about-btn"><i class="fas fa-download"></i> Free Download!</button>
           </div>
         </section>
         <!-- contact me section -->
@@ -117,19 +117,13 @@
                 <i class="fas fa-star"></i>
                 <div></div>
               </div>
-              <div>Name
-                <input class="col-xs-12 " type="text" placeholder="">
-              </div>
-              <div>Email Address
-                <input class="col-xs-12 " type="text" placeholder="">
-              </div>
-              <div>Phone Number
-                <input class="col-xs-12 " type="text" placeholder="">
-              </div>
-              <div>Message
-                <input class="col-xs-12 input-message" type="text" placeholder="">
-              </div>
-              <button type="button" class="btn btn-lg contact-btn">Send</button>
+              <form>
+                <input type="text" name="name" required="" placeholder="Name" class=" contact-input">
+                <input type="email" name="email" required="" placeholder="Email Address" class=" contact-input">
+                <input type="number" name="phone-number" required="" placeholder="Phone Number" class=" contact-input">
+                <textarea name="message" rows="5" placeholder="Message" class=" contact-input"></textarea>
+                <button type="button" class="btn btn-lg" id="contact-btn">Send</button>
+              </form>
             </div>
           </div>
         </section>
@@ -155,7 +149,7 @@
             <!-- footer about freelance -->
             <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-0 footer-about">
               <h4>ABOUT FREELANCER</h4>
-              <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>. </p>
+              <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#" class="about-hover">Start Bootstrap</a>. </p>
             </div>
           </div>
           <!-- copyright striscia finale -->
