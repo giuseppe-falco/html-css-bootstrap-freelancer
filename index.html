@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
-
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>Bootstrap Freelancer</title>
   </head>
   <body>
@@ -17,11 +18,11 @@
         <div class="header-nav">
           <div class="container">
             <nav class="row color-white ">
-              <div class="col-xs-7 col-xs-offset-1 col-lg-4 col-offset-sm-1 col-offset-md-0 col-md-4 col-sm-5">
+              <div class="col-xs-7 col-xs-offset-1 col-lg-4 col-sm-offset-0 col-md-offset-0 col-md-4 col-sm-5">
                 <h4>START BOOTSTRAP</h4>
               </div>
               <div class="col-xs-1 col-xs-offset-2 hidden-sm hidden-md hidden-lg"><i class="fas fa-bars"></i></div>
-              <div class="hidden-xs col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-3 col-sm-5 col-sm-offset-1 ">
+              <div class="hidden-xs col-lg-4 col-lg-offset-4 col-md-5 col-md-offset-3 col-sm-7 col-sm-offset-0 ">
                 <ul class="">
                   <li>portfolio</li>
                   <li>about</li>
@@ -32,48 +33,90 @@
           </div>
         </div>
         <!-- hero verde con propic -->
-        <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 hero">
-          <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5 propic">
-          </div>
-          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 propic-text color-white">
-            <h2>START BOOTSTRAP</h2>
-            <p>Graphic artist - web designer - illustrator</p>
+        <div class="container-fluid">
+          <div class="row hero">
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12  color-white propic center">
+                <img src="img/avataaars.svg" alt="avatars" class="img-responsive">
+                <h2>START BOOTSTRAP</h2>
+                <div class="star-div">
+                  <div></div>
+                  <i class="fas fa-star"></i>
+                  <div></div>
+                </div>
+                <p>Graphic artist - web designer - illustrator</p>
+              </div>
+            </div>
           </div>
         </div>
       </header>
       <main>
         <!-- portfolio section -->
-        <section class="container portfolio">
+        <section class="container portfolio center">
           <div class="row">
-            <h2 id="portfolio">PORTFOLIO</h2>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-lg-2 col-lg-offset-1 portfolio-block"></div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-2  portfolio-block"></div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-lg-2 col-lg-offset-2 portfolio-block"></div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-1 portfolio-block"></div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-lg-2 col-lg-offset-2 portfolio-block"></div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-2 portfolio-block"></div>
+            <h2>PORTFOLIO</h2>
+            <div class="star-div">
+              <div></div>
+              <i class="fas fa-star"></i>
+              <div></div>
+            </div>
+          </div>
+          <div class="row portfolio-block">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+              <img src="img/cabin.png" class="img-responsive" alt="immagine">
+              <div class="overlay"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+              <img src="img/cake.png" class="img-responsive" alt="immagine">
+              <div class="overlay"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+              <img src="img/circus.png" class="img-responsive" alt="immagine">
+              <div class="overlay"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+              <img src="img/game.png" class="img-responsive" alt="immagine">
+              <div class="overlay"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+              <img src="img/safe.png" class="img-responsive" alt="immagine">
+              <div class="overlay"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
+              <img src="img/submarine.png" class="img-responsive" alt="immagine">
+              <div class="overlay"><i class="fas fa-plus"></i></div>
+            </div>
           </div>
         </section>
         <!-- about section -->
-        <section class="col-xs-12 col-lg-12 col-md-12 col-sm-12 about">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 about-title color-white">
+        <section class="col-xs-12 col-lg-12 col-md-12 col-sm-12 about color-white">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 about-title center color-white">
             <h2>ABOUT</h2>
+            <div class="star-div">
+              <div></div>
+              <i class="fas fa-star"></i>
+              <div></div>
+            </div>
           </div>
-          <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 about-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3 about-text">
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
           </div>
-          <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-5 col-lg-offset-0 about-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 col-lg-3 col-lg-offset-0 about-text">
+            You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
           </div>
-          <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5">
-            <button type="button" class="btn btn-default about-btn"><i class="fas fa-download"></i> Download</button>
+          <div class="col-xs-4 col-xs-offset-4 ">
+            <button type="button" class="btn btn-lg about-btn center"><i class="fas fa-download"></i> Free Download!</button>
           </div>
         </section>
         <!-- contact me section -->
         <section class="container">
           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 contact-me">
-              <h2>CONTACT ME</h2>
+            <div class="col-xs-10 col-xs-offset-1 contact-me ">
+              <h2 class="center">CONTACT ME</h2>
+              <div class="star-div center">
+                <div></div>
+                <i class="fas fa-star"></i>
+                <div></div>
+              </div>
               <div>Name
                 <input class="col-xs-12 " type="text" placeholder="">
               </div>
@@ -86,36 +129,38 @@
               <div>Message
                 <input class="col-xs-12 input-message" type="text" placeholder="">
               </div>
-              <button type="button" class="btn btn-default contact-btn">Send</button>
+              <button type="button" class="btn btn-lg contact-btn">Send</button>
             </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="col-xs-12 footer">
-          <!-- footer location -->
-          <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-0 footer-location">
-            <h4>LOCATION</h4>
-            <p>2215 John Daniel Drive Clark, MO 54243</p>
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 footer center">
+            <!-- footer location -->
+            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-0 footer-location">
+              <h4>LOCATION</h4>
+              <p>2215 John Daniel Drive Clark, MO 54243</p>
+            </div>
+            <!-- footer around the web -->
+            <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 footer-around">
+              <h4>AROUND THE WEB</h4>
+              <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-google-plus-g"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+              </ul>
+            </div>
+            <!-- footer about freelance -->
+            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-0 footer-about">
+              <h4>ABOUT FREELANCER</h4>
+              <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>. </p>
+            </div>
           </div>
-          <!-- footer around the web -->
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 footer-around">
-            <h4>AROUND THE WEB</h4>
-            <ul>
-              <li><i class="fab fa-facebook-f"></i></li>
-              <li><i class="fab fa-google-plus-g"></i></li>
-              <li><i class="fab fa-twitter"></i></li>
-              <li><i class="fab fa-linkedin-in"></i></li>
-            </ul>
-          </div>
-          <!-- footer about freelance -->
-          <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-0 footer-about">
-            <h4>ABOUT FREELANCER</h4>
-            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>. </p>
-          </div>
+          <!-- copyright striscia finale -->
+          <div class="col-xs-12 copyright center">Copyright <i class="far fa-copyright"></i> Your Website 2019</div>
         </div>
-        <!-- copyright striscia finale -->
-        <div class="col-xs-12 copyright">Copyright <i class="far fa-copyright"></i> Your Website 2019</div>
-      </footer>
+    </footer>
   </body>
 </html>
